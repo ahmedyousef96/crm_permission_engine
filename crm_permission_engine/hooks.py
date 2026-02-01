@@ -10,7 +10,8 @@ app_license = "mit"
 
 required_apps = ["erpnext"]
 
-
+after_install = "crm_permission_engine.install.after_install"
+before_uninstall = "crm_permission_engine.install.before_uninstall"
 
 # crm_permission_engine/hooks.py
 
