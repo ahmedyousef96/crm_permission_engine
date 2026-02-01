@@ -37,7 +37,7 @@ def get_custom_fields():
                 "fieldname": "custom_crm_full_access_roles",
                 "fieldtype": "Table MultiSelect",
                 "label": "CRM Full Access Roles",
-                "options": "Role",
+                "options": "CRM Full Access Role",
                 "insert_after": "custom_enable_permission_engine",
                 "depends_on": "eval:doc.custom_enable_permission_engine == 1",
                 "description": (
