@@ -8,7 +8,23 @@ app_license = "mit"
 # Apps
 # ------------------
 
-# required_apps = []
+required_apps = ["erpnext"]
+
+
+
+# crm_permission_engine/hooks.py
+
+permission_query_conditions = {
+    "Lead": "crm_permission_engine.permissions.lead.permission_query",
+    "Opportunity": "crm_permission_engine.permissions.opportunity.permission_query",
+    "Quotation": "crm_permission_engine.permissions.quotation.permission_query",
+}
+
+has_permission = {
+    "Lead": "crm_permission_engine.permissions.lead.has_permission",
+    "Opportunity": "crm_permission_engine.permissions.opportunity.has_permission",
+    "Quotation": "crm_permission_engine.permissions.quotation.has_permission",
+}
 
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
